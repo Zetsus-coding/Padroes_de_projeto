@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+using Fachada.Subsistemas;
+using Fachada.Facade;
+
+namespace Fachada
+{
+    class Program
+    {
+
+    }
+}
