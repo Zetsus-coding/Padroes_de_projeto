@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Facade.Subsistemas;
 using Fachada.Subsistemas;
 
-namespace Fachada.Facade
+namespace Fachada.Principal
 {
     internal class Facade
     {
@@ -24,10 +23,17 @@ namespace Fachada.Facade
         }
 
         // 2 informações da compra (v. pago e qtd. desejada)
-        public void Sistema(double pagmento, int qtdDesejada)  
+        public void Sistema(double valorPago, int qtdDesejada)  
         {
             //produto.DefinirProduto();
-
+            if(estoque.VerificarEstoque(produto.quantidade, qtdDesejada)) 
+            { 
+                if(pagamento.ChecarPagamento(produto.valorProduto, valorPago))
+                {
+                    transporte.Envio(produto.nome);
+                }
+            }
+            Console.WriteLine("\nFinalizando programa devido ao erro");
         }
     }
 }

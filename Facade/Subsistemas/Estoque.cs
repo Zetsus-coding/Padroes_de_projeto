@@ -14,7 +14,7 @@ namespace Fachada.Subsistemas
 
         public bool VerificarEstoque(int qtd, int qtdDesejada) 
         { 
-            if(qtdDesejada < qtd)
+            if(qtdDesejada > qtd)
             {
                 Console.WriteLine($"Quantidade informada ({qtdDesejada}) é maior do que estoque disponível do produto ({qtd})");
                 return false;

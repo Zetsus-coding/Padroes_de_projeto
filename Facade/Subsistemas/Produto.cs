@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Facade.Subsistemas
+namespace Fachada.Subsistemas
 {
     internal class Produto
     {
@@ -38,7 +38,7 @@ namespace Facade.Subsistemas
         //    }
 
         //    // Quantidade produto
-        //    Console.WriteLine($"/nPor favor, informe a quantidade de \"{nome}\" em estoque, neste momento ");
+        //    Console.WriteLine($"\nPor favor, informe a quantidade de \"{nome}\" em estoque, neste momento ");
         //    if (Int32.TryParse(Console.ReadLine(), out quantidade))
         //    {
         //        Console.WriteLine($"Quantidade ({quantidade}) adicionada com sucesso");
@@ -49,7 +49,7 @@ namespace Facade.Subsistemas
         //    }
 
         //    // Valor do produto
-        //    Console.WriteLine($"Por favor, informe o valor de {nome} ");
+        //    Console.WriteLine($"\nPor favor, informe o valor de {nome} ");
         //    if (Double.TryParse(Console.ReadLine(), NumberStyles.Any, new CultureInfo("pt-BR"), out valorProduto))
         //    {
         //        Console.WriteLine($"Valor ({valorProduto}) informado com sucesso");
