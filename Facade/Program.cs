@@ -9,7 +9,7 @@ namespace Fachada
         {
 
             Facade fachada = new();
-            fachada.Sistema(18, 5); // Café, 5, 19.99
+            fachada.RealizarPedido(18, 5); // Café, 5, 19.99
         }
     }
 }

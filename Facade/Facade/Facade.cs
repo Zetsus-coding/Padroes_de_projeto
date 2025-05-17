@@ -23,7 +23,7 @@ namespace Fachada.Principal
         }
 
         // 2 informações da compra (v. pago e qtd. desejada)
-        public void Sistema(double valorPago, int qtdDesejada)  
+        public void RealizarPedido(double valorPago, int qtdDesejada)  
         {
             //produto.DefinirProduto();
             if(estoque.VerificarEstoque(produto.quantidade, qtdDesejada)) 
