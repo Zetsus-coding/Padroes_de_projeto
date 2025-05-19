@@ -19,15 +19,15 @@ namespace Decorator.Decorator
         // Utiliza essa referência (^) para sobreescrever os comportamentos;
         // Os concrete decorator são a "extensão" deste decorator e também vão sobreescrever os métodos
 
-        public decimal Preco()
+        public virtual decimal Preco()
         {
             var preco = _pizza.Preco();
             return preco;
         }
 
-        public string SaborPizza()
+        public virtual string AdicionaisPizza()
         {
-            var sabor = _pizza.SaborPizza();
+            var sabor = _pizza.AdicionaisPizza();
             return sabor;
         }
     }

@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Decorator.Component;
-using Decorator.ConcreteComponent;
+﻿using Decorator.Component;
 
 namespace Decorator.ConcreteComponent // 
 {
@@ -26,7 +19,7 @@ namespace Decorator.ConcreteComponent //
             return preco;
         }
 
-        public string SaborPizza() // Pizza padrão
+        public string AdicionaisPizza() // Pizza padrão
         {
             var opcao = $"Pizza {Sabor}" ;
             return opcao;
