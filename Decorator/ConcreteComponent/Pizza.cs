@@ -3,7 +3,7 @@
 namespace Decorator.ConcreteComponent // 
 {
 
-    internal class Pizza : IPizza // COMPONENTE CONCRETO - Herda da interfaze IPizza
+    internal class Pizza : IPizza // COMPONENTE CONCRETO - Implementa da interfaze IPizza
     {
 
         private string? Sabor { get; set; } // Propriedade
